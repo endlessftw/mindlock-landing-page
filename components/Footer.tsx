@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-bold mb-4">Legal</h4>
             <ul className="space-y-2 text-slate-500">
-              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+              <li><a href="/privacy.html" className="hover:text-white">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-white">Terms of Service</a></li>
             </ul>
           </div>
