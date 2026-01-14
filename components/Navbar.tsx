@@ -50,7 +50,11 @@ const Navbar: React.FC = () => {
           href="https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-slate-200 hover:scale-105 transition-all duration-300 shadow-lg shadow-white/10"
+          onClick={(e) => {
+            e.preventDefault();
+            window.open('https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp', '_blank');
+          }}
+          className="hidden md:flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-slate-200 hover:scale-105 transition-all duration-300 shadow-lg shadow-white/10 cursor-pointer"
         >
           <Download className="w-4 h-4" />
           <span>Add to Chrome</span>

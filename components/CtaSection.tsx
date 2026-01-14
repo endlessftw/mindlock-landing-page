@@ -24,11 +24,20 @@ const CtaSection: React.FC = () => {
             Join 10,000+ users who have unlocked their true potential with MindLock.
           </p>
 
-          <button className="group relative inline-flex items-center justify-center gap-3 bg-white text-slate-950 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-slate-100 transition-all hover:scale-105">
+          <a
+            href="https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp', '_blank');
+            }}
+            className="group relative inline-flex items-center justify-center gap-3 bg-white text-slate-950 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-slate-100 transition-all hover:scale-105 cursor-pointer"
+          >
             Install MindLock
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             <div className="absolute inset-0 rounded-2xl ring-2 ring-white/50 animate-pulse"></div>
-          </button>
+          </a>
 
           <p className="mt-8 text-sm text-slate-500">No credit card required • Works on Chrome, Brave, Edge</p>
         </motion.div>

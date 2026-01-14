@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
 
           <h1 className="text-5xl lg:text-7xl font-bold font-display leading-[1.1] mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-brand-200">
             Master Your <br />
-            <span className="text-brand-500">Digital Focus</span>
+            <span className="text-brand-500">Digital Docus</span>
           </h1>
 
           <p className="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
@@ -31,24 +31,31 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <motion.a
+            <a
               href="https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="flex items-center justify-center gap-3 bg-gradient-to-r from-brand-500 to-brand-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 transition-all"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp', '_blank');
+              }}
+              className="flex items-center justify-center gap-3 bg-gradient-to-r from-brand-500 to-brand-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 transition-all hover:scale-105 cursor-pointer"
             >
               <Chrome className="w-5 h-5" />
               Add to Chrome
-            </motion.a>
-            <motion.button
-              whileHover={{ scale: 1.02, backgroundColor: "rgba(30, 27, 51, 0.8)" }}
-              whileTap={{ scale: 0.98 }}
-              className="flex items-center justify-center gap-3 bg-dark-card/50 backdrop-blur-sm border border-dark-border text-white px-8 py-4 rounded-2xl font-bold text-lg hover:border-brand-500/30 transition-all"
+            </a>
+            <a
+              href="https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp', '_blank');
+              }}
+              className="flex items-center justify-center gap-3 bg-dark-card/50 backdrop-blur-sm border border-dark-border text-white px-8 py-4 rounded-2xl font-bold text-lg hover:border-brand-500/30 transition-all hover:scale-105 cursor-pointer"
             >
               View Demo
-            </motion.button>
+            </a>
           </div>
 
           <div className="mt-10 flex items-center gap-6 text-sm text-slate-500">
