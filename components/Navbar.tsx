@@ -46,10 +46,15 @@ const Navbar: React.FC = () => {
           <a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')} className="hover:text-white transition-colors">Reviews</a>
         </div>
 
-        <button className="hidden md:flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-slate-200 hover:scale-105 transition-all duration-300 shadow-lg shadow-white/10">
+        <a 
+          href="https://chromewebstore.google.com/detail/mindlock/egdaeejpejnibbfgiemhbofpoipkoncp"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-slate-200 hover:scale-105 transition-all duration-300 shadow-lg shadow-white/10"
+        >
           <Download className="w-4 h-4" />
           <span>Add to Chrome</span>
-        </button>
+        </a>
       </div>
     </motion.nav>
   );
